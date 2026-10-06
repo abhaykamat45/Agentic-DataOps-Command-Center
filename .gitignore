@@ -1,0 +1,111 @@
+# =============================================================================
+# Gitignore for Agentic DataOps Command Center
+# Comprehensive security and repository hygiene
+# =============================================================================
+
+# --- Environment & Secret Management (CRITICAL) ---
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+!.env.example
+
+# Private Keys, Certificates & Tokens
+*.pem
+*.key
+*.pfx
+*.crt
+*.p12
+*.id_rsa
+*.id_ed25519
+*.pub
+credentials.json
+client_secret*.json
+token.json
+tokens.json
+secrets.json
+
+# --- Python & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Testing, Profiling & Type Checkers ---
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# --- Runtime Databases & Storage ---
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+data/*.db
+data/metadata.db
+
+# --- Log Files ---
+*.log
+/logs/
+data/logs/*
+!data/logs/.gitkeep
+
+# --- OS-specific & Temporary Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+~$*
+
+# --- IDEs & Editor Configuration ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
